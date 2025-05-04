@@ -1,135 +1,151 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SrStarks10 - Assista Minhas Lives!</title>
-    <style>
-        /* Estilização geral da página */
-        body {
-            font-family: Arial, sans-serif;
-            background: url('https://images6.alphacoders.com/344/344715.jpg') no-repeat center center fixed;
-            background-size: cover;
-            color: white;
-            text-align: center;
-            padding: 30px;
-        }
-        /* Contêiner principal */
-        .container {
-            max-width: 600px;
-            margin: auto;
-            background: rgba(0, 0, 0, 0.8);
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.6);
-            margin-bottom: 20px;
-        }
-        h1 {
-            font-size: 2.2em;
-            margin-bottom: 10px;
-            color: #ff0000;
-        }
-        p {
-            font-size: 1.1em;
-            line-height: 1.6;
-        }
-        /* Botões de links para Twitch e YouTube */
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            margin-top: 15px;
-            padding: 10px 20px;
-            font-size: 1em;
-            color: white;
-            background: #8b0000;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            text-decoration: none;
-            transition: 0.3s;
-        }
-        .btn:hover {
-            background: #ff0000;
-        }
-        .btn img {
-            width: 20px;
-            height: 20px;
-        }
-        /* Contêiner das redes sociais */
-        .social-container {
-            max-width: 600px;
-            margin: auto;
-            background: rgba(0, 0, 0, 0.8);
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.6);
-            margin-bottom: 20px;
-        }
-        .social-links a {
-            display: inline-block;
-            margin: 10px;
-            font-size: 1.2em;
-            color: white;
-            text-decoration: none;
-            transition: 0.3s;
-        }
-        .social-links a:hover {
-            color: #ff0000;
-        }
-        .social-links img {
-            width: 24px;
-            height: 24px;
-            vertical-align: middle;
-            margin-right: 8px;
-        }
-        /* Rodapé da página */
-        .footer {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            padding: 10px 0;
-            font-size: 0.9em;
-            color: #ccc;
-            text-align: center;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SrStarks10 - Lives Ao Vivo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background-color: #0f0f0f;
+      color: #fff;
+      text-align: center;
+    }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1617814077598-5df2ec3eede0?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      padding: 100px 20px 60px;
+      box-shadow: inset 0 0 200px rgba(0,0,0,0.7);
+    }
+
+    header img {
+      width: 120px;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      color: #ff0040;
+      text-shadow: 2px 2px #000;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+      color: #ccc;
+    }
+
+    .buttons {
+      margin: 40px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      max-width: 600px; /* Limitar a largura máxima para melhor visual */
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #ff0040;
+      padding: 14px 30px;
+      font-size: 1em;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      background: #ff3366;
+    }
+
+    .btn img {
+      width: 24px;
+      height: 24px;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #ff0040;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .social-links a {
+      display: inline-block;
+      margin: 10px;
+      font-size: 1.1em;
+      color: white;
+      text-decoration: none;
+    }
+
+    .social-links img {
+      width: 28px;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+
+    footer {
+      background: #111;
+      padding: 15px;
+      font-size: 0.9em;
+      color: #aaa;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>🩸 Bem-vindo ao SrStarks10! 🩸</h1>
-        <p>Assista minhas lives ao vivo no YouTube e na Twitch! Acompanhe gameplay, interações e momentos épicos! 🚀</p>
-        <a href="https://www.twitch.tv/srstarks10" target="_blank" class="btn">
-          <img src="https://avatarfiles.alphacoders.com/262/262279.jpg" alt="Twitch">
-            Assista Agora na Twitch
-        </a>
-        <a href="https://www.youtube.com/@srstarks10/live" target="_blank" class="btn">
-            <img src="https://avatarfiles.alphacoders.com/819/81975.jpg" alt="YouTube">
-            Assista Agora no YouTube
-        </a>
+  <header>
+    <img src="C:\Users\alvar\OneDrive\Área de Trabalho\site live\img\logo srstarks.jpg" alt="Logo SrStarks10"> <!-- Substitua pelo caminho correto da sua logo -->
+    <h1>🎮 SrStarks10 Ao Vivo! 🎮</h1>
+    <p>Não perca minhas próximas transmissões na Twitch e YouTube!</p>
+  </header>
+
+  <section class="buttons">
+    <a class="btn" href="https://www.twitch.tv/srstarks10" target="_blank">
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/twitch.png"/> Twitch
+    </a>
+    <a class="btn" href="https://www.youtube.com/@srstarks10/live" target="_blank">
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png"/> YouTube
+    </a>
+  </section>
+
+  <section>
+    <h2>🗓️ Horários das Lives</h2>
+    <p>🎮 Transmissões todos os dias das <strong>12h às 14h</strong></p>
+    <p>📅 Quartas-feiras das <strong>17h às 22h</strong></p>
+  </section>
+
+  <section>
+    <h2>📲 Redes Sociais</h2>
+    <div class="social-links">
+      <a href="https://www.instagram.com/alvarosilvaoliveira10/" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png"/> Instagram
+      </a>
+      <a href="https://www.facebook.com/Alvaro.oliveira2022/" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png"/> Facebook
+      </a>
+      <a href="https://discord.gg/YVVr34hJQr" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/discord-logo.png"/> Discord
+      </a>
     </div>
-    <div class="social-container">
-        <h2>📱 Minhas Redes Sociais 📱</h2>
-        <div class="social-links">  
-            <a href="https://www.instagram.com/alvarosilvaoliveira10/" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">Instagram
-            </a>
-            <a href="https://www.facebook.com/Alvaro.oliveira2022/" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">Facebook
-            </a>
-        </div>
-    </div>
-    <div class="social-container">
-        <h2>🎮 Meu Discord 🎮</h2>
-        <div class="social-links">
-            <a href="https://discord.gg/YVVr34hJQr" target="_blank">
-                <img src="https://avatarfiles.alphacoders.com/367/367017.png" alt="Discord" width="30"> Discord Oficial
-            </a>
-        </div>
-    </div>
-    <div class="footer">
-        © 2024 SrStarks10. Todos os direitos reservados.
-    </div>
+  </section>
+
+  <footer>
+    © 2025 SrStarks10. Todos os direitos reservados.
+  </footer>
 </body>
 </html>
